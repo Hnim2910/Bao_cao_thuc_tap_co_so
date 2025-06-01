@@ -1,0 +1,176 @@
+.register-page {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0a2463 0%, #1e3d59 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register-page::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.register-form {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.register-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-logo {
+    width: 140px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.register-title {
+    font-size: 28px;
+    color: #1a237e;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.register-subtitle {
+    color: #546e7a;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.register-form-item {
+    margin-bottom: 25px !important;
+}
+
+.register-form-item .ant-input-prefix {
+    color: #1976d2;
+    font-size: 18px;
+    margin-right: 12px;
+    opacity: 0.8;
+}
+
+
+.register-form-item .ant-input:hover {
+    border-color: #bbdefb;
+}
+
+.register-form-item .ant-input:focus {
+    border-color: #2196f3;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.register-form-button {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #2196f3, #1976d2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.register-form-button:hover {
+    background: linear-gradient(90deg, #1976d2, #1565c0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.3);
+}
+
+.register-form-button:active {
+    transform: translateY(0);
+}
+
+.register-form-login {
+    margin-top: 25px;
+    text-align: center;
+    color: #546e7a;
+    font-size: 15px;
+}
+
+.register-form-login a {
+    color: #1976d2;
+    margin-left: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.register-form-login a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+.register-divider {
+    color: #546e7a;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 30px 0;
+    opacity: 0.7;
+}
+
+.register-alert {
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .register-form {
+        padding: 30px 25px;
+        margin: 15px;
+    }
+
+    .register-title {
+        font-size: 24px;
+    }
+
+    .register-subtitle {
+        font-size: 14px;
+    }
+
+    .register-form-item .ant-input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .register-form-button {
+        height: 45px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,204 @@
+.footer-container {
+    background: linear-gradient(135deg, #1a1c4b 0%, #2d1b4e 100%);
+    padding: 80px 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/medical-icons.png');
+    opacity: 0.03;
+}
+
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('https://assets.codepen.io/85648/wave.svg') repeat-x;
+    transform: rotate(180deg);
+}
+
+.footer-section {
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    border-radius: 2px;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-link::before {
+    content: '⚕';
+    position: absolute;
+    left: 0;
+    color: #00d2ff;
+    font-size: 12px;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer-social-icon {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50%;
+    transition: all 0.3s ease !important;
+}
+
+.footer-social-icon:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%) !important;
+}
+
+.footer-contact-info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-contact-icon {
+    margin-right: 10px;
+    color: #00d2ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-container {
+        padding: 60px 0 30px;
+    }
+}
+
+
+@media only screen and (min-width : 320px) {
+    .footer-desktop{
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+.footer-desktop{
+    display: none;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .footer-desktop{
+        display: none;
+    }
+    
+    .footer-mobile{
+        display: flex;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .footer-desktop{
+        display: flex;
+    }
+    
+    .footer-mobile{
+        display: none;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .footer-desktop{
+        display: flex;
+    }
+    .footer-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1280px) {
+    .footer{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+}
