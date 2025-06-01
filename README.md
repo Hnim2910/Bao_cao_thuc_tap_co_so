@@ -36,7 +36,7 @@ npm install
   npm start
   ```
   
-  - **Terminal 1:** Chạy Admin
+- **Terminal 3:** Chạy Admin
   ```bash
   cd Admin
   npm start
