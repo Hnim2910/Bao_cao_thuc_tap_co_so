@@ -68,7 +68,7 @@ function _Footer() {
 
             <div className="footer-bottom">
                 <p className="footer-copyright">
-                    {/* © 2025 HealthBooker. Tất cả quyền được bảo lưu. */}
+                     Copyright@ 2025 Trauma Team. Thuc tap co so.
                 </p>
             </div>
         </Footer>

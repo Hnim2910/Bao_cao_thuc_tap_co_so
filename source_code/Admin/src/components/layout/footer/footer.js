@@ -9,7 +9,7 @@ function _Footer(){
         <Footer style={{
             marginLeft: 230,
             textAlign: 'center'}}>
-            {/* Copyright@ 2025 Created by team HealthBooker */}
+            Copyright@ 2025 Thuc tap co so
         </Footer>
     );
 }
